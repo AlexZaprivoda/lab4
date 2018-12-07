@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="test">
+      <input type="checkbox" id="test" />
+      <div></div>
+    </label>
+    <style>
+      div {
+        /* border: 1px solid; */
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: green;
+      }
+      label {
+        background-color: lightgray;
+        height: 20px;
+        border-radius: 45%;
+        display: inline-block;
+        width: 40px;
+      }
+      label > [type="checkbox"] {
+        display: none;
+      }
+      input:checked + div {
+        margin-left: 20px;
+        background-color: red;
+      }
+    </style>
+  </body>
+</html>
